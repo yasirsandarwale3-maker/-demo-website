@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Semantic Blog</title>
+    <style>
+        /* Basic Page Setup */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f4f4; color: #333; }
+
+        /* Header & Navigation Design */
+        header { background: #2c3e50; color: #ffffff; padding: 30px 0; text-align: center; }
+        nav { background: #3498db; padding: 15px; text-align: center; }
+        nav a { color: #ffffff; text-decoration: none; padding: 0 20px; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { text-decoration: underline; }
+
+        /* Main Layout using CSS Flexbox */
+        main { display: flex; max-width: 1100px; margin: 30px auto; gap: 30px; padding: 0 20px; }
+
+        /* Left Side: Blog Articles */
+        .content-area { flex: 3; }
+        article { background: #fff; padding: 25px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        article h2 { color: #2c3e50; margin-bottom: 5px; }
+        .post-date { font-size: 0.9em; color: #7f8c8d; margin-bottom: 15px; font-style: italic; }
+        article p { margin-bottom: 15px; }
+
+        /* Right Side: Sidebar Layout */
+        aside { flex: 1; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); align-self: flex-start; }
+        aside h3 { color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        aside p { margin-bottom: 20px; font-size: 0.95em; }
+        aside ul { list-style-type: none; }
+        aside ul li { margin-bottom: 10px; }
+        aside ul li a { color: #3498db; text-decoration: none; }
+        aside ul li a:hover { text-decoration: underline; }
+
+        /* Footer Design */
+        footer { background: #2c3e50; color: #ffffff; text-align: center; padding: 20px; margin-top: 40px; }
+
+        /* Make it mobile-friendly */
+        @media(max-width: 768px) {
+            main { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>Code & Create: A Developer's Blog</h1>
+    </header>
+
+    <!-- Semantic Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Semantic Main Content Area -->
+    <main>
+        
+        <!-- Section for the actual blog posts -->
+        <section class="content-area">
+            
+            <article>
+                <h2>Understanding HTML5 Semantics</h2>
+                <p class="post-date">Published on June 22, 2026</p>
+                <p>Semantic HTML tags provide true meaning to our web pages rather than just presentation. Instead of relying on generic <code>&lt;div&gt;</code> tags to structure everything, modern developers use specific tags to describe the content's purpose.</p>
+                <p>This approach makes it much easier for search engines to understand our content, and it significantly improves accessibility for users utilizing screen readers.</p>
+            </article>
+
+            <article>
+                <h2>Why CSS Flexbox Makes Layouts Easy</h2>
+                <p class="post-date">Published on June 18, 2026</p>
+                <p>Building page layouts used to be incredibly difficult, requiring complex math with floats and absolute positioning. With CSS Flexbox, arranging elements side-by-side—like the main content area and the sidebar on this very blog—takes just a couple lines of CSS.</p>
+                <p>Flexbox also makes responsive design a breeze, allowing columns to easily stack on top of each other when viewed on mobile screens.</p>
+            </article>
+
+        </section>
+
+        <!-- Semantic Aside for Sidebar content -->
+        <aside>
+            <h3>About the Author</h3>
+            <p>Hi! I'm learning front-end web development. This blog is where I document my coding journey, share tips, and practice building clean user interfaces.</p>
+            
+            <h3>Topics</h3>
+            <ul>
+                <li><a href="#">HTML & CSS Basics</a></li>
+                <li><a href="#">JavaScript Projects</a></li>
+                <li><a href="#">Web Design Tips</a></li>
+                <li><a href="#">Career Advice</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Code & Create. Built with Semantic HTML.</p>
+    </footer>
+
+</body>
+</html>
